@@ -1,0 +1,81 @@
+station_id,name,neighborhood,zone,capacity,available_bikes,available_docks,status,last_update,bikes_pct
+ST001,Praça da Sé,Sé,Centro,21,12,9,active,2024-09-30 14:30:00,57.1
+ST002,Estação República,República,Centro,20,11,9,active,2024-09-30 14:30:00,55.0
+ST003,Vale do Anhangabaú,Centro,Centro,21,3,18,active,2024-09-30 14:30:00,14.3
+ST004,Estação Luz,Luz,Centro,22,20,2,active,2024-09-30 14:30:00,90.9
+ST005,MASP Avenida Paulista,Bela Vista,Centro,26,9,17,active,2024-09-30 14:30:00,34.6
+ST006,Praça da Liberdade,Liberdade,Centro,18,18,0,active,2024-09-30 14:30:00,100.0
+ST007,Largo do Arouche,República,Centro,21,21,0,active,2024-09-30 14:30:00,100.0
+ST008,Santa Cecília,Santa Cecília,Centro,24,4,20,active,2024-09-30 14:30:00,16.7
+ST009,Estação Consolação,Consolação,Centro,21,4,17,active,2024-09-30 14:30:00,19.0
+ST010,Mercado Municipal,Centro,Centro,12,0,12,active,2024-09-30 14:30:00,0.0
+ST011,Praça Roosevelt,Consolação,Centro,16,15,1,active,2024-09-30 14:30:00,93.8
+ST012,Estação Brás,Brás,Centro,30,26,4,active,2024-09-30 14:30:00,86.7
+ST013,Bom Retiro,Bom Retiro,Centro,12,3,9,active,2024-09-30 14:30:00,25.0
+ST014,Praça da Bandeira,Centro,Centro,15,4,11,active,2024-09-30 14:30:00,26.7
+ST015,Vila Mariana,Vila Mariana,Zona Sul,19,3,16,active,2024-09-30 14:30:00,15.8
+ST016,Estação Ana Rosa,Vila Mariana,Zona Sul,24,15,9,active,2024-09-30 14:30:00,62.5
+ST017,Parque Ibirapuera Portão 3,Moema,Zona Sul,23,9,14,active,2024-09-30 14:30:00,39.1
+ST018,Moema Indianópolis,Moema,Zona Sul,23,8,15,active,2024-09-30 14:30:00,34.8
+ST019,Shopping Ibirapuera,Moema,Zona Sul,23,16,7,active,2024-09-30 14:30:00,69.6
+ST020,Itaim Bibi,Itaim Bibi,Zona Sul,21,8,13,active,2024-09-30 14:30:00,38.1
+ST021,Vila Olímpia,Vila Olímpia,Zona Sul,30,22,8,active,2024-09-30 14:30:00,73.3
+ST022,Brooklin Novo,Brooklin,Zona Sul,21,8,13,active,2024-09-30 14:30:00,38.1
+ST023,Berrini,Cidade Monções,Zona Sul,25,18,7,active,2024-09-30 14:30:00,72.0
+ST024,Estação Santo Amaro,Santo Amaro,Zona Sul,16,4,12,active,2024-09-30 14:30:00,25.0
+ST025,Largo Treze,Santo Amaro,Zona Sul,18,10,8,active,2024-09-30 14:30:00,55.6
+ST026,Estação Saúde,Saúde,Zona Sul,15,6,9,active,2024-09-30 14:30:00,40.0
+ST027,Estação Jabaquara,Jabaquara,Zona Sul,18,3,15,active,2024-09-30 14:30:00,16.7
+ST028,Campo Belo,Campo Belo,Zona Sul,21,9,12,active,2024-09-30 14:30:00,42.9
+ST029,Chácara Santo Antônio,Chácara Santo Antônio,Zona Sul,24,14,10,active,2024-09-30 14:30:00,58.3
+ST030,Estação Paraíso,Paraíso,Zona Sul,30,17,13,active,2024-09-30 14:30:00,56.7
+ST031,Museu do Ipiranga,Ipiranga,Zona Sul,22,1,21,active,2024-09-30 14:30:00,4.5
+ST032,Estação Sacomã,Sacomã,Zona Sul,17,6,11,active,2024-09-30 14:30:00,35.3
+ST033,Vila Clementino,Vila Clementino,Zona Sul,17,0,17,active,2024-09-30 14:30:00,0.0
+ST034,Chácara Klabin,Chácara Klabin,Zona Sul,12,1,11,active,2024-09-30 14:30:00,8.3
+ST035,Largo da Batata,Pinheiros,Zona Oeste,26,10,16,active,2024-09-30 14:30:00,38.5
+ST036,Vila Madalena,Vila Madalena,Zona Oeste,28,15,13,active,2024-09-30 14:30:00,53.6
+ST037,Estação Faria Lima,Pinheiros,Zona Oeste,22,11,11,active,2024-09-30 14:30:00,50.0
+ST038,Cidade Universitária USP,Butantã,Zona Oeste,20,13,7,active,2024-09-30 14:30:00,65.0
+ST039,Estação Butantã,Butantã,Zona Oeste,22,12,10,active,2024-09-30 14:30:00,54.5
+ST040,Perdizes,Perdizes,Zona Oeste,23,21,2,active,2024-09-30 14:30:00,91.3
+ST041,Alto de Pinheiros,Alto de Pinheiros,Zona Oeste,24,6,18,active,2024-09-30 14:30:00,25.0
+ST042,Estação Lapa,Lapa,Zona Oeste,17,10,7,active,2024-09-30 14:30:00,58.8
+ST043,Parque Villa-Lobos,Alto de Pinheiros,Zona Oeste,22,1,21,active,2024-09-30 14:30:00,4.5
+ST044,Pompeia,Pompeia,Zona Oeste,20,7,13,active,2024-09-30 14:30:00,35.0
+ST045,Estação Barra Funda,Barra Funda,Zona Oeste,23,22,1,active,2024-09-30 14:30:00,95.7
+ST046,Água Branca,Água Branca,Zona Oeste,18,13,5,active,2024-09-30 14:30:00,72.2
+ST047,Vila Leopoldina,Vila Leopoldina,Zona Oeste,22,5,17,inactive,2024-09-30 14:30:00,22.7
+ST048,Jardim Paulista,Jardim Paulista,Zona Oeste,24,22,2,active,2024-09-30 14:30:00,91.7
+ST049,Cerqueira César,Cerqueira César,Zona Oeste,23,6,17,active,2024-09-30 14:30:00,26.1
+ST050,Sumaré,Sumaré,Zona Oeste,12,10,2,active,2024-09-30 14:30:00,83.3
+ST051,Vila Sônia,Vila Sônia,Zona Oeste,12,1,11,maintenance,2024-09-30 14:30:00,8.3
+ST052,Morumbi,Morumbi,Zona Oeste,17,3,14,active,2024-09-30 14:30:00,17.6
+ST053,Estação Santana,Santana,Zona Norte,24,23,1,active,2024-09-30 14:30:00,95.8
+ST054,Parque da Juventude,Santana,Zona Norte,23,11,12,active,2024-09-30 14:30:00,47.8
+ST055,Estação Tucuruvi,Tucuruvi,Zona Norte,22,11,11,active,2024-09-30 14:30:00,50.0
+ST056,Casa Verde,Casa Verde,Zona Norte,23,3,20,maintenance,2024-09-30 14:30:00,13.0
+ST057,Freguesia do Ó,Freguesia do Ó,Zona Norte,23,1,22,active,2024-09-30 14:30:00,4.3
+ST058,Vila Guilherme,Vila Guilherme,Zona Norte,16,3,13,active,2024-09-30 14:30:00,18.8
+ST059,Estação Portuguesa-Tietê,Santana,Zona Norte,21,14,7,active,2024-09-30 14:30:00,66.7
+ST060,Jaçanã,Jaçanã,Zona Norte,14,0,14,active,2024-09-30 14:30:00,0.0
+ST061,Mandaqui,Mandaqui,Zona Norte,23,0,23,active,2024-09-30 14:30:00,0.0
+ST062,Horto Florestal,Tremembé,Zona Norte,15,7,8,active,2024-09-30 14:30:00,46.7
+ST063,Vila Maria,Vila Maria,Zona Norte,16,7,9,active,2024-09-30 14:30:00,43.8
+ST064,Imirim,Imirim,Zona Norte,14,1,13,active,2024-09-30 14:30:00,7.1
+ST065,Carandiru,Carandiru,Zona Norte,20,6,14,active,2024-09-30 14:30:00,30.0
+ST066,Parada Inglesa,Parada Inglesa,Zona Norte,20,0,20,active,2024-09-30 14:30:00,0.0
+ST067,Estação Tatuapé,Tatuapé,Zona Leste,22,5,17,active,2024-09-30 14:30:00,22.7
+ST068,Shopping Anália Franco,Vila Regente Feijó,Zona Leste,20,10,10,active,2024-09-30 14:30:00,50.0
+ST069,Mooca,Mooca,Zona Leste,17,6,11,active,2024-09-30 14:30:00,35.3
+ST070,Estação Bresser-Mooca,Mooca,Zona Leste,24,24,0,active,2024-09-30 14:30:00,100.0
+ST071,Belém,Belém,Zona Leste,23,0,23,active,2024-09-30 14:30:00,0.0
+ST072,Estação Carrão,Carrão,Zona Leste,21,3,18,active,2024-09-30 14:30:00,14.3
+ST073,Estação Penha,Penha,Zona Leste,18,9,9,active,2024-09-30 14:30:00,50.0
+ST074,Estação Itaquera,Itaquera,Zona Leste,16,3,13,active,2024-09-30 14:30:00,18.8
+ST075,Parque do Carmo,Itaquera,Zona Leste,22,0,22,active,2024-09-30 14:30:00,0.0
+ST076,Estação Vila Prudente,Vila Prudente,Zona Leste,21,13,8,active,2024-09-30 14:30:00,61.9
+ST077,São Mateus,São Mateus,Zona Leste,16,0,16,active,2024-09-30 14:30:00,0.0
+ST078,Guaianases,Guaianases,Zona Leste,17,6,11,active,2024-09-30 14:30:00,35.3
+ST079,Aricanduva,Aricanduva,Zona Leste,16,13,3,active,2024-09-30 14:30:00,81.2
+ST080,Artur Alvim,Artur Alvim,Zona Leste,24,7,17,active,2024-09-30 14:30:00,29.2

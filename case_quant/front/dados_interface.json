@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "timestamp": "2024-09-30 14:30:00",
+    "periodo_previsao": "15:00–16:00",
+    "fonte": "snapshot_atual.csv"
+  },
+  "rede": {
+    "bicicletas": 702,
+    "vagas": 922,
+    "capacidade": 1624,
+    "ocupacao_pct": 43.2,
+    "estacoes_ativas": 77,
+    "estacoes_indisponiveis": 3,
+    "criticas_baixas": 13,
+    "criticas_altas": 9
+  },
+  "zonas": [
+    {"nome": "Centro", "ocupacao_pct": 53.8, "ativas": 14, "criticas": 5},
+    {"nome": "Zona Oeste", "ocupacao_pct": 50.1, "ativas": 16, "criticas": 4},
+    {"nome": "Zona Sul", "ocupacao_pct": 42.5, "ativas": 20, "criticas": 3},
+    {"nome": "Zona Leste", "ocupacao_pct": 35.7, "ativas": 14, "criticas": 4},
+    {"nome": "Zona Norte", "ocupacao_pct": 31.8, "ativas": 13, "criticas": 6}
+  ],
+  "criticas": [
+    {"station_id": "ST010", "name": "Mercado Municipal", "zone": "Centro", "ocupacao_pct": 0.0, "tipo": "baixa"},
+    {"station_id": "ST033", "name": "Vila Clementino", "zone": "Zona Sul", "ocupacao_pct": 0.0, "tipo": "baixa"},
+    {"station_id": "ST060", "name": "Jaçanã", "zone": "Zona Norte", "ocupacao_pct": 0.0, "tipo": "baixa"},
+    {"station_id": "ST061", "name": "Mandaqui", "zone": "Zona Norte", "ocupacao_pct": 0.0, "tipo": "baixa"},
+    {"station_id": "ST066", "name": "Parada Inglesa", "zone": "Zona Norte", "ocupacao_pct": 0.0, "tipo": "baixa"},
+    {"station_id": "ST004", "name": "Estação Luz", "zone": "Centro", "ocupacao_pct": 90.9, "tipo": "alta"},
+    {"station_id": "ST045", "name": "Estação Barra Funda", "zone": "Zona Oeste", "ocupacao_pct": 95.7, "tipo": "alta"},
+    {"station_id": "ST006", "name": "Praça da Liberdade", "zone": "Centro", "ocupacao_pct": 100.0, "tipo": "alta"},
+    {"station_id": "ST007", "name": "Largo do Arouche", "zone": "Centro", "ocupacao_pct": 100.0, "tipo": "alta"}
+  ],
+  "indisponiveis": [
+    {"station_id": "ST051", "name": "Vila Sônia", "zone": "Zona Oeste", "status": "maintenance"},
+    {"station_id": "ST056", "name": "Casa Verde", "zone": "Zona Norte", "status": "maintenance"},
+    {"station_id": "ST047", "name": "Vila Leopoldina", "zone": "Zona Oeste", "status": "inactive"}
+  ],
+  "riscos": [
+    {"station_id": "ST043", "name": "Parque Villa-Lobos", "zone": "Zona Oeste", "bikes": 1, "docks": 21, "retirada_1h": 1.714, "devolucao_1h": 0.0, "total_2h": 4.0},
+    {"station_id": "ST006", "name": "Praça da Liberdade", "zone": "Centro", "bikes": 18, "docks": 0, "retirada_1h": 0.0, "devolucao_1h": 1.357, "total_2h": 3.643},
+    {"station_id": "ST007", "name": "Largo do Arouche", "zone": "Centro", "bikes": 21, "docks": 0, "retirada_1h": 0.0, "devolucao_1h": 1.5, "total_2h": 3.61},
+    {"station_id": "ST010", "name": "Mercado Municipal", "zone": "Centro", "bikes": 0, "docks": 12, "retirada_1h": 1.786, "devolucao_1h": 0.0, "total_2h": 2.786},
+    {"station_id": "ST004", "name": "Estação Luz", "zone": "Centro", "bikes": 20, "docks": 2, "retirada_1h": 0.0, "devolucao_1h": 0.857, "total_2h": 2.714},
+    {"station_id": "ST075", "name": "Parque do Carmo", "zone": "Zona Leste", "bikes": 0, "docks": 22, "retirada_1h": 1.143, "devolucao_1h": 0.0, "total_2h": 2.5}
+  ],
+  "movimentacoes": [
+    {
+      "ordem": 1,
+      "origem": {"id": "ST006", "nome": "Praça da Liberdade", "zona": "Centro"},
+      "destino": {"id": "ST043", "nome": "Parque Villa-Lobos", "zona": "Zona Oeste"},
+      "quantidade": 10,
+      "variacao_risco_origem": -3.643,
+      "beneficio_destino": 4.0,
+      "ganho_liquido": 7.643,
+      "justificativa": "A origem está sem vagas e o destino tem apenas uma bicicleta. A transferência reduz o risco de devolução na origem e o risco de retirada no destino."
+    },
+    {
+      "ordem": 2,
+      "origem": {"id": "ST007", "nome": "Largo do Arouche", "zona": "Centro"},
+      "destino": {"id": "ST010", "nome": "Mercado Municipal", "zona": "Centro"},
+      "quantidade": 10,
+      "variacao_risco_origem": -3.61,
+      "beneficio_destino": 2.786,
+      "ganho_liquido": 6.396,
+      "justificativa": "A origem está cheia e o destino está vazio. A ação abre vagas para devoluções e cria disponibilidade para retiradas."
+    },
+    {
+      "ordem": 3,
+      "origem": {"id": "ST004", "nome": "Estação Luz", "zona": "Centro"},
+      "destino": {"id": "ST075", "nome": "Parque do Carmo", "zona": "Zona Leste"},
+      "quantidade": 10,
+      "variacao_risco_origem": -2.714,
+      "beneficio_destino": 2.5,
+      "ganho_liquido": 5.214,
+      "justificativa": "A ação alivia uma estação próxima de lotar e protege uma estação vazia antes da próxima janela de demanda."
+    }
+  ],
+  "validacao": {
+    "periodo_treino": "julho–agosto de 2024",
+    "periodo_validacao": "setembro de 2024",
+    "retiradas": {"mae": 0.699, "rmse": 1.061, "vies": 0.017},
+    "devolucoes": {"mae": 0.708, "rmse": 1.125, "vies": 0.017}
+  },
+  "limitacoes": [
+    "Viagens históricas incluem apenas trajetos realizados; a demanda frustrada pode estar subestimada.",
+    "A demanda da próxima hora é estimada a partir de padrões históricos, não observada antecipadamente.",
+    "A disponibilidade futura das estações é incerta; a recomendação usa apenas frequência histórica de atividade."
+  ],
+  "detalhes_modelo": [
+    "O risco combina faltas esperadas de bicicleta e de vaga na hora corrente e na hora seguinte.",
+    "As recomendações são reavaliadas em sequência: cada movimento considera o estoque deixado pelo anterior.",
+    "Resultados de simulação de outubro serviram para validação retrospectiva e não são usados como informação do snapshot."
+  ]
+}

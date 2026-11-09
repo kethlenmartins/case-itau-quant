@@ -1,0 +1,81 @@
+station_id,name,address,neighborhood,zone,latitude,longitude,capacity,installation_date,station_type
+ST001,Praça da Sé,"Praça da Sé, s/n",Sé,Centro,-23.549419,-46.633604,21,2020-03-02,premium
+ST002,Estação República,"Praça da República, 180",República,Centro,-23.542754,-46.64267,20,2021-01-12,premium
+ST003,Vale do Anhangabaú,"Viaduto do Chá, 15",Centro,Centro,-23.548306,-46.635231,21,2020-03-06,standard
+ST004,Estação Luz,"Praça da Luz, 1",Luz,Centro,-23.535567,-46.635156,22,2019-05-16,premium
+ST005,MASP Avenida Paulista,"Av. Paulista, 1578",Bela Vista,Centro,-23.561379,-46.656306,26,2020-06-06,premium
+ST006,Praça da Liberdade,"Praça da Liberdade, 100",Liberdade,Centro,-23.558973,-46.634276,18,2022-05-12,standard
+ST007,Largo do Arouche,"Largo do Arouche, 50",República,Centro,-23.542896,-46.646756,21,2019-06-25,standard
+ST008,Santa Cecília,"Av. São João, 1350",Santa Cecília,Centro,-23.539369,-46.652957,24,2020-06-21,standard
+ST009,Estação Consolação,"R. da Consolação, 2200",Consolação,Centro,-23.556024,-46.65988,21,2020-06-29,premium
+ST010,Mercado Municipal,"R. da Cantareira, 306",Centro,Centro,-23.542249,-46.628442,12,2023-06-17,express
+ST011,Praça Roosevelt,"Praça Roosevelt, 184",Consolação,Centro,-23.546511,-46.645594,16,2022-03-29,standard
+ST012,Estação Brás,"Praça Agente Cícero, s/n",Brás,Centro,-23.547272,-46.614193,30,2020-11-16,premium
+ST013,Bom Retiro,"R. José Paulino, 900",Bom Retiro,Centro,-23.527736,-46.638085,12,2023-10-09,express
+ST014,Praça da Bandeira,"Praça da Bandeira, s/n",Centro,Centro,-23.555073,-46.640994,15,2023-12-25,express
+ST015,Vila Mariana,"R. Domingos de Morais, 1500",Vila Mariana,Zona Sul,-23.590061,-46.634393,19,2023-05-03,standard
+ST016,Estação Ana Rosa,"Av. Ana Rosa, 50",Vila Mariana,Zona Sul,-23.582694,-46.637682,24,2019-10-03,premium
+ST017,Parque Ibirapuera Portão 3,"Av. Pedro Álvares Cabral, s/n",Moema,Zona Sul,-23.586821,-46.658759,23,2020-08-02,premium
+ST018,Moema Indianópolis,"Av. Indianópolis, 1200",Moema,Zona Sul,-23.601426,-46.665436,23,2022-03-28,standard
+ST019,Shopping Ibirapuera,"Av. Ibirapuera, 3103",Moema,Zona Sul,-23.610923,-46.667313,23,2021-02-07,premium
+ST020,Itaim Bibi,"R. João Cachoeira, 400",Itaim Bibi,Zona Sul,-23.586212,-46.678691,21,2021-06-16,premium
+ST021,Vila Olímpia,"R. Gomes de Carvalho, 1100",Vila Olímpia,Zona Sul,-23.595512,-46.687131,30,2020-09-09,premium
+ST022,Brooklin Novo,"Av. Portugal, 500",Brooklin,Zona Sul,-23.611589,-46.694167,21,2023-08-18,standard
+ST023,Berrini,"Av. Eng. Luís Carlos Berrini, 1500",Cidade Monções,Zona Sul,-23.60898,-46.695435,25,2019-10-07,premium
+ST024,Estação Santo Amaro,"Av. Santo Amaro, 5800",Santo Amaro,Zona Sul,-23.655199,-46.708353,16,2019-12-05,standard
+ST025,Largo Treze,"Praça Floriano Peixoto, s/n",Santo Amaro,Zona Sul,-23.652341,-46.702295,18,2020-01-25,standard
+ST026,Estação Saúde,"Av. Jabaquara, 900",Saúde,Zona Sul,-23.618609,-46.640284,15,2022-11-21,standard
+ST027,Estação Jabaquara,"Av. Eng. Armando de Arruda Pereira, 3800",Jabaquara,Zona Sul,-23.646638,-46.642608,18,2022-09-01,standard
+ST028,Campo Belo,"Av. Vereador José Diniz, 2000",Campo Belo,Zona Sul,-23.622034,-46.670778,21,2023-02-22,standard
+ST029,Chácara Santo Antônio,"R. Américo Brasiliense, 1500",Chácara Santo Antônio,Zona Sul,-23.639771,-46.7001,24,2020-06-03,standard
+ST030,Estação Paraíso,"Av. Paulista, 2400",Paraíso,Zona Sul,-23.575773,-46.640396,30,2019-09-10,premium
+ST031,Museu do Ipiranga,"Praça da Independência, s/n",Ipiranga,Zona Sul,-23.585796,-46.60915,22,2022-08-12,standard
+ST032,Estação Sacomã,"Av. do Estado, 5500",Sacomã,Zona Sul,-23.601037,-46.601697,17,2023-01-31,express
+ST033,Vila Clementino,"R. Pedro de Toledo, 700",Vila Clementino,Zona Sul,-23.599678,-46.639057,17,2020-05-21,standard
+ST034,Chácara Klabin,"R. Comendador Elias Zarzur, 100",Chácara Klabin,Zona Sul,-23.607342,-46.626139,12,2023-02-18,express
+ST035,Largo da Batata,"Largo da Batata, s/n",Pinheiros,Zona Oeste,-23.566376,-46.694004,26,2019-06-20,premium
+ST036,Vila Madalena,"R. Aspicuelta, 500",Vila Madalena,Zona Oeste,-23.553896,-46.689528,28,2020-04-26,premium
+ST037,Estação Faria Lima,"Av. Brig. Faria Lima, 2000",Pinheiros,Zona Oeste,-23.572645,-46.694888,22,2019-08-08,premium
+ST038,Cidade Universitária USP,"Av. Prof. Lineu Prestes, 2200",Butantã,Zona Oeste,-23.560923,-46.728339,20,2019-08-21,standard
+ST039,Estação Butantã,"Av. Vital Brasil, 1000",Butantã,Zona Oeste,-23.57196,-46.707278,22,2023-03-19,standard
+ST040,Perdizes,"R. Turiassu, 900",Perdizes,Zona Oeste,-23.53581,-46.676823,23,2022-12-31,standard
+ST041,Alto de Pinheiros,"Av. Pedroso de Morais, 1800",Alto de Pinheiros,Zona Oeste,-23.554121,-46.704249,24,2023-02-20,standard
+ST042,Estação Lapa,"R. Guaicurus, 1000",Lapa,Zona Oeste,-23.521854,-46.701556,17,2021-06-04,standard
+ST043,Parque Villa-Lobos,"Av. Prof. Fonseca Rodrigues, 2001",Alto de Pinheiros,Zona Oeste,-23.545425,-46.727205,22,2019-11-04,premium
+ST044,Pompeia,"R. Clélia, 1500",Pompeia,Zona Oeste,-23.529229,-46.68787,20,2022-02-08,standard
+ST045,Estação Barra Funda,"Av. Auro Soares de Moura Andrade, 664",Barra Funda,Zona Oeste,-23.526875,-46.66643,23,2019-08-23,premium
+ST046,Água Branca,"Av. Francisco Matarazzo, 1500",Água Branca,Zona Oeste,-23.525391,-46.682133,18,2023-07-26,standard
+ST047,Vila Leopoldina,"R. Carlos Weber, 1000",Vila Leopoldina,Zona Oeste,-23.528807,-46.735032,22,2023-03-27,standard
+ST048,Jardim Paulista,"Al. Santos, 1800",Jardim Paulista,Zona Oeste,-23.566556,-46.655516,24,2021-09-13,standard
+ST049,Cerqueira César,"R. Oscar Freire, 800",Cerqueira César,Zona Oeste,-23.559839,-46.668442,23,2021-02-10,standard
+ST050,Sumaré,"Av. Dr. Arnaldo, 1800",Sumaré,Zona Oeste,-23.552097,-46.679986,12,2024-02-10,express
+ST051,Vila Sônia,"Av. Prof. Francisco Morato, 4000",Vila Sônia,Zona Oeste,-23.59568,-46.732642,12,2023-04-24,express
+ST052,Morumbi,"Av. Giovanni Gronchi, 1500",Morumbi,Zona Oeste,-23.619595,-46.726562,17,2022-07-01,standard
+ST053,Estação Santana,"Av. Cruzeiro do Sul, 1800",Santana,Zona Norte,-23.502672,-46.626076,24,2019-08-09,premium
+ST054,Parque da Juventude,"Av. Cruzeiro do Sul, 2630",Santana,Zona Norte,-23.499775,-46.624779,23,2021-10-17,standard
+ST055,Estação Tucuruvi,"Av. Dr. Antônio Maria Laet, 500",Tucuruvi,Zona Norte,-23.479005,-46.602342,22,2021-01-13,standard
+ST056,Casa Verde,"Av. Casa Verde, 1200",Casa Verde,Zona Norte,-23.508201,-46.659043,23,2020-02-27,standard
+ST057,Freguesia do Ó,"Largo da Matriz de Nossa Senhora do Ó, 50",Freguesia do Ó,Zona Norte,-23.501816,-46.695359,23,2022-02-06,standard
+ST058,Vila Guilherme,"Av. Guilherme Cotching, 1000",Vila Guilherme,Zona Norte,-23.510372,-46.608808,16,2022-04-30,standard
+ST059,Estação Portuguesa-Tietê,"Av. Cruzeiro do Sul, 3000",Santana,Zona Norte,-23.49556,-46.622836,21,2019-10-22,standard
+ST060,Jaçanã,"Av. Jaçanã, 800",Jaçanã,Zona Norte,-23.465796,-46.583154,14,2022-10-21,express
+ST061,Mandaqui,"R. Voluntários da Pátria, 4000",Mandaqui,Zona Norte,-23.481933,-46.635516,23,2022-10-19,standard
+ST062,Horto Florestal,"R. do Horto, 931",Tremembé,Zona Norte,-23.461161,-46.629142,15,2019-09-09,standard
+ST063,Vila Maria,"Av. Guilherme Cotching, 2000",Vila Maria,Zona Norte,-23.505336,-46.588868,16,2022-07-11,express
+ST064,Imirim,"Av. Imirim, 1500",Imirim,Zona Norte,-23.48919,-46.650334,14,2022-01-01,express
+ST065,Carandiru,"Av. Cruzeiro do Sul, 1000",Carandiru,Zona Norte,-23.510566,-46.624574,20,2021-07-20,standard
+ST066,Parada Inglesa,"Av. Luís Dumont Villares, 1500",Parada Inglesa,Zona Norte,-23.489044,-46.605964,20,2022-09-11,standard
+ST067,Estação Tatuapé,"R. Cantagalo, 1000",Tatuapé,Zona Leste,-23.538819,-46.576641,22,2019-04-03,premium
+ST068,Shopping Anália Franco,"Av. Regente Feijó, 1739",Vila Regente Feijó,Zona Leste,-23.558026,-46.56208,20,2021-03-24,standard
+ST069,Mooca,"R. da Mooca, 2000",Mooca,Zona Leste,-23.557476,-46.599568,17,2019-09-26,standard
+ST070,Estação Bresser-Mooca,"R. Bresser, 1000",Mooca,Zona Leste,-23.548745,-46.601938,24,2022-08-19,standard
+ST071,Belém,"Av. Celso Garcia, 2500",Belém,Zona Leste,-23.538092,-46.588046,23,2023-06-04,standard
+ST072,Estação Carrão,"Av. Conselheiro Carrão, 2000",Carrão,Zona Leste,-23.541876,-46.557016,21,2019-08-26,standard
+ST073,Estação Penha,"R. Dr. João Ribeiro, 500",Penha,Zona Leste,-23.532449,-46.542019,18,2019-06-17,standard
+ST074,Estação Itaquera,"Av. José Pinheiro Borges, s/n",Itaquera,Zona Leste,-23.540482,-46.470938,16,2022-09-05,standard
+ST075,Parque do Carmo,"Av. Afonso de Sampaio e Sousa, 951",Itaquera,Zona Leste,-23.575692,-46.459193,22,2020-11-29,standard
+ST076,Estação Vila Prudente,"Av. Prof. Luiz Ignácio Anhaia Mello, 1500",Vila Prudente,Zona Leste,-23.582198,-46.583056,21,2022-07-11,standard
+ST077,São Mateus,"Av. Ragueb Chohfi, 1500",São Mateus,Zona Leste,-23.604259,-46.476985,16,2022-08-29,express
+ST078,Guaianases,"Av. Feliciano Correia, 800",Guaianases,Zona Leste,-23.540533,-46.412458,17,2024-01-02,express
+ST079,Aricanduva,"Av. Aricanduva, 5555",Aricanduva,Zona Leste,-23.563857,-46.510992,16,2019-08-23,standard
+ST080,Artur Alvim,"R. Mário Lopes Leão, 500",Artur Alvim,Zona Leste,-23.543165,-46.485953,24,2020-07-13,standard

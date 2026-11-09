@@ -1,0 +1,32 @@
+date,day_of_week,day_name,is_weekend,is_holiday,holiday_name,school_vacation,special_event
+2024-10-01,1,Terça-feira,False,False,,False,
+2024-10-02,2,Quarta-feira,False,False,,False,
+2024-10-03,3,Quinta-feira,False,False,,False,
+2024-10-04,4,Sexta-feira,False,False,,False,
+2024-10-05,5,Sábado,True,False,,False,Bike Day SP no Ibirapuera
+2024-10-06,6,Domingo,True,False,,False,
+2024-10-07,0,Segunda-feira,False,False,,False,
+2024-10-08,1,Terça-feira,False,False,,False,
+2024-10-09,2,Quarta-feira,False,False,,False,
+2024-10-10,3,Quinta-feira,False,False,,False,
+2024-10-11,4,Sexta-feira,False,False,,False,
+2024-10-12,5,Sábado,True,True,Nossa Senhora Aparecida,False,Feriado no Parque Villa-Lobos
+2024-10-13,6,Domingo,True,False,,False,
+2024-10-14,0,Segunda-feira,False,False,,False,
+2024-10-15,1,Terça-feira,False,False,,False,
+2024-10-16,2,Quarta-feira,False,False,,False,
+2024-10-17,3,Quinta-feira,False,False,,False,
+2024-10-18,4,Sexta-feira,False,False,,False,
+2024-10-19,5,Sábado,True,False,,False,Circuito das Estações - Paulista
+2024-10-20,6,Domingo,True,False,,False,
+2024-10-21,0,Segunda-feira,False,False,,False,
+2024-10-22,1,Terça-feira,False,False,,False,
+2024-10-23,2,Quarta-feira,False,False,,False,
+2024-10-24,3,Quinta-feira,False,False,,False,
+2024-10-25,4,Sexta-feira,False,False,,False,
+2024-10-26,5,Sábado,True,False,,False,Festival SP na Rua - Centro
+2024-10-27,6,Domingo,True,False,,False,
+2024-10-28,0,Segunda-feira,False,False,,False,
+2024-10-29,1,Terça-feira,False,False,,False,
+2024-10-30,2,Quarta-feira,False,False,,False,
+2024-10-31,3,Quinta-feira,False,False,,False,

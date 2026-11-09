@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <meta
+      name="description"
+      content="Interface local de apoio à redistribuição de bicicletas compartilhadas."
+    />
+    <title>Central de Redistribuição</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" type="module"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+    <header class="context-bar">
+      <div class="context-inner">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <div>
+            <p class="eyebrow">Operação de bicicletas</p>
+            <p class="product-name">Central de Redistribuição</p>
+          </div>
+        </div>
+        <div class="snapshot-context" aria-label="Contexto da análise">
+          <div class="context-item">
+            <span class="context-label">Snapshot observado</span>
+            <strong id="snapshot-time">Carregando…</strong>
+          </div>
+          <div class="context-item">
+            <span class="context-label">Próxima janela</span>
+            <strong id="forecast-period">—</strong>
+          </div>
+          <span class="local-badge"><span aria-hidden="true">●</span> Dados locais</span>
+        </div>
+      </div>
+    </header>
+
+    <main id="conteudo" class="page-shell" tabindex="-1">
+      <div id="loading-state" class="status-panel" role="status">
+        <span class="spinner" aria-hidden="true"></span>
+        <div>
+          <strong>Carregando o snapshot local</strong>
+          <p>Preparando a leitura operacional da rede.</p>
+        </div>
+      </div>
+
+      <section id="error-state" class="status-panel status-error" role="alert" hidden>
+        <span class="status-symbol" aria-hidden="true">!</span>
+        <div>
+          <strong>Não foi possível abrir os dados da operação</strong>
+          <p id="error-message">
+            Verifique se o arquivo dados_interface.json está nesta mesma pasta e contém JSON válido.
+          </p>
+        </div>
+      </section>
+
+      <div id="dashboard" hidden>
+        <section class="overview" aria-labelledby="overview-title">
+          <div class="section-heading compact-heading">
+            <div>
+              <p class="section-kicker observed">Observado agora</p>
+              <h1 id="overview-title">Como a rede está agora?</h1>
+            </div>
+            <p id="overview-summary" class="heading-note"></p>
+          </div>
+          <div id="metric-grid" class="metric-grid"></div>
+        </section>
+
+        <section class="movements-section" aria-labelledby="movements-title">
+          <div class="section-heading movements-heading">
+            <div>
+              <p class="section-kicker recommendation">Prioridade de operação</p>
+              <h2 id="movements-title">Movimentações recomendadas, em ordem</h2>
+            </div>
+            <div class="heading-actions">
+              <p>Até três ações com ganho previsto positivo nas próximas duas horas.</p>
+              <button class="text-button" type="button" data-open-dialog="method-dialog">
+                Como esta recomendação foi calculada?
+              </button>
+            </div>
+          </div>
+          <div id="movement-grid" class="movement-grid"></div>
+          <p id="movement-empty-note" class="empty-note" hidden></p>
+        </section>
+
+        <div class="section-divider" aria-hidden="true"></div>
+
+        <section class="detail-grid" aria-label="Detalhes do estado atual">
+          <article class="panel zone-panel" aria-labelledby="zones-title">
+            <div class="panel-heading">
+              <div>
+                <p class="section-kicker observed">Observado agora</p>
+                <h2 id="zones-title">Ocupação por zona</h2>
+              </div>
+              <button
+                class="help-button"
+                type="button"
+                aria-label="Explicar ocupação por zona"
+                data-tooltip="Percentual das vagas ocupadas por bicicletas nas estações ativas de cada zona."
+              >
+                ?
+              </button>
+            </div>
+            <div id="zones-list" class="zones-list"></div>
+          </article>
+
+          <article class="panel critical-panel" aria-labelledby="critical-title">
+            <div class="panel-heading">
+              <div>
+                <p class="section-kicker observed">Atenção imediata</p>
+                <h2 id="critical-title">Estações críticas observadas</h2>
+              </div>
+              <button
+                class="help-button"
+                type="button"
+                aria-label="Explicar estações críticas"
+                data-tooltip="São estações ativas quase sem bicicletas ou quase sem vagas. Estações fora de operação aparecem separadamente."
+              >
+                ?
+              </button>
+            </div>
+            <div id="critical-groups" class="critical-groups"></div>
+          </article>
+        </section>
+
+        <section class="risk-section panel" aria-labelledby="risk-title">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker forecast">Estimativa para a próxima hora</p>
+              <h2 id="risk-title">
+                O que pode acontecer na próxima hora?
+                <button
+                  class="help-button inline-help"
+                  type="button"
+                  aria-label="Explicar os indicadores de risco"
+                  data-tooltip="Cada número estima quantos atendimentos podem falhar por falta de bicicleta ou de vaga. Não é uma probabilidade nem uma falha já ocorrida."
+                >
+                  ?
+                </button>
+              </h2>
+              <p class="section-description">
+                Estimativa baseada no padrão histórico desta estação, neste horário e dia da semana.
+              </p>
+            </div>
+          </div>
+          <div
+            class="table-wrap"
+            tabindex="0"
+            aria-label="Tabela de riscos; role para visualizar todas as colunas"
+          >
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Estação</th>
+                  <th scope="col">Estoque atual</th>
+                  <th scope="col">Pode faltar bicicleta<br><span>na próxima hora</span></th>
+                  <th scope="col">Pode faltar vaga<br><span>na próxima hora</span></th>
+                  <th scope="col">Impacto estimado<br><span>nas próximas 2h</span></th>
+                </tr>
+              </thead>
+              <tbody id="risk-table-body"></tbody>
+            </table>
+          </div>
+          <div id="risk-empty" class="empty-state" hidden>
+            Não há estimativas de risco disponíveis para este snapshot.
+          </div>
+          <button id="toggle-risks" class="secondary-button" type="button" hidden>
+            Ver detalhes
+          </button>
+        </section>
+
+        <section class="quality-section" aria-labelledby="quality-title">
+          <article class="quality-card">
+            <div class="quality-intro">
+              <p class="section-kicker history">Previsão validada no histórico</p>
+              <h2 id="quality-title">Quanto confiar nesta leitura?</h2>
+              <p id="validation-periods">Períodos de treino e validação não informados.</p>
+            </div>
+            <div id="validation-metrics" class="validation-metrics"></div>
+          </article>
+
+          <article class="limitations-card" aria-labelledby="limits-title">
+            <div>
+              <p class="section-kicker neutral">Antes de agir</p>
+              <h3 id="limits-title">O que confirmar no campo</h3>
+            </div>
+            <ol id="limits-list" class="limits-list"></ol>
+            <button id="toggle-limits" class="secondary-button" type="button" hidden>
+              Entender os limites
+            </button>
+            <div id="model-details" class="model-details" hidden></div>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <dialog id="method-dialog" aria-labelledby="method-title">
+      <div class="dialog-head">
+        <div>
+          <p class="section-kicker forecast">Em linguagem simples</p>
+          <h2 id="method-title">Como esta recomendação foi calculada?</h2>
+        </div>
+        <button class="close-button" type="button" data-close-dialog aria-label="Fechar explicação">
+          ×
+        </button>
+      </div>
+      <div class="dialog-body">
+        <p>
+          A análise compara o estoque observado agora com a demanda estimada para cada estação.
+          Depois, procura transferências que possam reduzir a falta de bicicletas ou de vagas sem
+          criar um problema maior na estação de origem.
+        </p>
+        <ol class="method-steps">
+          <li><strong>Parte do snapshot:</strong> bicicletas e vagas disponíveis neste momento.</li>
+          <li>
+            <strong>Estima a próxima janela:</strong> usa o padrão histórico do mesmo horário e dia
+            da semana.
+          </li>
+          <li>
+            <strong>Compara alternativas:</strong> prioriza o ganho líquido previsto nas próximas
+            duas horas.
+          </li>
+        </ol>
+        <p class="dialog-note">
+          A ordem é uma recomendação de apoio à decisão. Trânsito, equipe disponível e condições
+          locais devem ser considerados antes da execução.
+        </p>
+      </div>
+    </dialog>
+  </body>
+</html>

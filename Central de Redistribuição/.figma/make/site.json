@@ -1,0 +1,10 @@
+{
+  "description": "Ajuda equipes de operação de bicicletas compartilhadas em São Paulo a monitorar a rede, antecipar riscos de disponibilidade e priorizar redistribuições.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
